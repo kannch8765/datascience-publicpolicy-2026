@@ -1,13 +1,14 @@
-git checkout my-notes
-
-git add .
-git commit -m "notes / changes"
-git push origin my-notes
-
+# 1. sync from prof
 git fetch upstream
 git checkout main
 git merge upstream/main
 git push origin main
 
+# 2. update your branch
 git checkout my-notes
 git merge main
+
+# 3. do your work
+git add .
+git commit -m "notes / changes"
+git push origin my-notes
